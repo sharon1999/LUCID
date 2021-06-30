@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LUCID</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static',filename='form1.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="fade1">
+    <div>
+      <h1 class="text-4">Questionnaire <br></h1>
+      </div>
+      <div class="cont-1">
+        <ul>
+           <li> Kindly fill out the form with atmost concentration.</li>
+           <li>             
+            Please read the questions carefully before answering.</li> 
+          </ul>
+      </div>
+      <form class="form1" action="{{url_for('form1')}}" method="POST">
+        <div class="container">
+          <label for="fname" required
+            >1) Depressed mood most of the day, nearly every day</label> 
+            <div class="inp">
+              <input type="radio" id="fname" name="qn1" required value="1"  />Yes <br>
+              <input type="radio" id="fname" name="qn1"  value="0" />No 
+            </div>  
+          <br />
+        </div>
+        <div class="container">
+          <label for="fname"
+            >2) Markedly diminished interest or pleasure in all, or almost all,
+            activities most of the day, nearly every day</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn2" required value="1"/>Yes <br>
+          <input type="radio" id="fname" name="qn2"  value="0" />No</div>
+          <br />
+        </div>
+        <div class="container">
+          <label for="fname"
+            >3) Significant weight loss when not dieting or weight gain suddenly,
+            or decrease or increase in appetite nearly every day</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn3" required value="1"/>Yes<br>
+          <input type="radio" id="fname" name="qn3" value="0" />No</div>
+          <br />
+        </div>
+        <div class="container">
+          <label for="fname"
+            >4) Do you experience changes in your sleeping pattern , like being
+            not able to sleep, continue it or Over Sleeping</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn4" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn4" value="0" />No</div>
+          <br />
+        </div>
+        <div class="container">
+          <label for="fname"
+            >5) A slowing down of thought and a reduction of physical movement
+        </label>
+          <div class="inp">
+          <input type="radio" id="fname" name="qn5" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn5" value="0"/>No</div>
+          <br />
+        </div>
+        <div class="container">
+          <label for="fname"
+            >6) Fatigue or loss of energy nearly every day</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn6" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn6" value="0" />No </div>
+          <br /></div>
+        <div class="container">
+          <label for="fname"
+            >7) Feelings of worthlessness or excessive or inappropriate guilt
+            nearly every day</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn7" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn7" value="0" />No </div>
+          <br /></div>
+        <div class="container">
+          <label for="fname"
+            >8) Diminished ability to think or concentrate, or indecisiveness,
+            nearly every day</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn8" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn8" value="0" />No </div>
+          <br /></div>
+        <div class="container">
+          <label for="fname"
+            >9) Recurrent thoughts of death, recurrent suicidal thoughts without
+            a specific plan, or a suicide attempt or a specific plan for
+            committing suicide</label
+          >
+          <div class="inp">
+          <input type="radio" id="fname" name="qn9" required value="1" />Yes<br>
+          <input type="radio" id="fname" name="qn9" value="0" />No </div>
+          <br />
+        </div>
+        <div class="button-1">
+          <input type="submit" class="btn btn-primary btn-lg btn-block" value="Save and Next"></input>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

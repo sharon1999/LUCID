@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LUCID</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='final.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="container1">
+    <div class="text-center text-white lucid">
+      <nav class="navbar navbar-dark">
+        <a class="one" href="{{url_for('index')}}">LUCID</a>
+        <a class="two" href="{{url_for('about')}}">ABOUT</a>
+        <a class="two" href="{{url_for('contact')}}">CONTACT</a>
+      </nav>
+    </div>
+    <div class="heading-1">
+      <div class="txt1">
+        <h2>Your level of depression is</h2>
+      </div>
+      <div class="txt2">
+        <h1>{{a}}</h1>
+      </div>
+    </div>
+      <div class="txt3">
+        <h3><i class="fas fa-quote-left"></i> {{b}}</h3>
+      </div>
+      <div class="footer">
+        If you think you need help, try contacting the Doctors on our&nbsp;<a href="{{url_for('contact')}}">Contact</a>&nbsp;page.
+      </div> 
+  </body>
+</html>

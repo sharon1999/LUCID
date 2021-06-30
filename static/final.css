@@ -1,0 +1,75 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI";
+}
+body {
+  background-image: url("https://wallpapercave.com/wp/wp8063327.jpg");
+  background-size:cover;
+}
+.navbar {
+  display: flex;
+  font-family: "Segoe UI";
+  background-color: rgba(0, 0, 0, 0.267);
+}
+.one {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+.two {
+  flex: 0.1;
+}
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+}
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+}
+.heading-1{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.txt1 h2{
+        font-size: 50px;
+      }
+.txt2 h1{
+  font-size: 50px;
+  font-weight: 800;
+}
+.txt3{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color:rgba(92, 143, 255, 0.146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.txt3 h3{
+width: 600px;
+}
+.txt3 i{
+  position: relative;
+  top:-10px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  padding: 10px;  
+}
+*{
+      font-family: "Raleway", sans-serif;   
+    }
+    

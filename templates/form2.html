@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUCID</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href= "{{ url_for('static',filename='form2.css') }}"
+    >
+</head>
+<body>
+    <div class="login-form">
+      <form method="POST" action="{{url_for('form2')}}">
+        <div class="avatar">
+          <img src="https://img.icons8.com/pastel-glyph/2x/typewriter-with-paper--v2.png" alt="Avatar">
+        </div>
+            <h2 class="text-center"><b>
+              How do you feel about yourself for the past few weeks? Briefly describe about your thoughts, sleep and your social life. </b></h2>   
+          
+        <div class="form-group">
+                <textarea placeholder="Describe in about 2-3 sentences." rows="10" cols="60" required style="font-size: 20px;" name="textarea" ></textarea>  
+                <br>
+                <input type="submit" class="btn btn-primary btn-lg " value="Save and Next"></input>
+            </div>
+      </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUCID</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='home.css') }}"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="container1">
+    <div class="text-center text-white lucid">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="one" href="{{url_for('index')}}">LUCID</a>
+        <a class="two" href="{{url_for('about')}}">ABOUT</a>
+        <a class="two" href="{{url_for('contact')}}">CONTACT</a>
+      </nav>
+    </div>
+    <div class="heading-1">
+        <h1>Hi, {{username}}</h1>
+    </div>    
+    <div class="container">
+        <div class="card">
+            <div class="img1">
+                <img src="https://i.postimg.cc/3wfJbYCX/2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="{{url_for('form')}}">Heart Rate </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img2">
+                <img src="https://i.postimg.cc/hGzHcnRb/3.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="{{url_for('form1')}}">Questionnaire</a>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="img3">
+                <img src="https://i.postimg.cc/DZXzHRz8/1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="{{url_for('form2')}}">How do you feel?</a>
+            </div>
+        </div>
+    </div>
+    {% if counter == 3 %}
+    <div class="button-1">
+        <a href="{{url_for('final')}}">Analyse Now</a>
+    </div>
+    {% endif %}
+    </body>
+</html>

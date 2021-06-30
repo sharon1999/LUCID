@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /* background: rgb(0, 85, 255);
+    background: linear-gradient(154deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%); */
+  background-image: url("https://www.vandolph.co.za/vandolphsa/wp-content/uploads/2018/09/contact-us-background-2.jpg");
+  background-size: cover;
+}
+
+html {
+  box-sizing: border-box;
+}
+.nav1 {
+  margin-top: 25px;
+}
+.nav1 a {
+  font-size: 30px;
+  padding: 25px;
+  text-decoration: none;
+}
+.nav1 a:hover {
+  text-decoration: none;
+  color: #eee;
+}
+.nav1 h1 {
+  position: relative;
+  left: 38%;
+  top: -30px;
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+/* *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  } */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  margin-bottom: 16px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 350px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  margin: 8px;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  background-size: 200% auto;
+  box-shadow: 0 0 25px rgb(29, 146, 255);
+  border-radius: 10px;
+  display: block;
+}
+.card img {
+  padding-top: 15px;
+  height: 150px;
+  width: 150px;
+  border-radius: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(29, 146, 255);
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.heading h2 {
+  font-size: 70px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.button {
+  margin-top: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.664);
+  text-align: center;
+  cursor: pointer;
+}
+/* 
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+} */
+.button {
+  font-size: 20px;
+}
+.container a {
+  color: white;
+}
+.navbar a {
+  font-size: 25px;
+}
+.pinicon {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway";
+}
+.foot1 {
+  background-color: rgba(122, 122, 122, 0.986);
+  padding: 25px;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card1{
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+}
+.row1{
+  padding:30px; 
+}
+* {
+  font-family: "Raleway", sans-serif;
+}
+@media only screen and (max-width:700px){
+  .nav1 h1{
+    font-size: 
+  }
+}

@@ -1,0 +1,92 @@
+:root {
+  --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+}
+.fade1{
+  animation: transitionIn 1s;
+}
+@keyframes transitionIn{
+  from{
+    opacity:0;
+    transform:rotateX(-10deg);
+  }
+  to{
+    opacity:1;
+    transform:rotateX(0deg);
+  }
+}
+body {
+    background-image: url("https://wallpaperaccess.com/full/1682869.png");
+    background-size:contain;
+  }
+  .text-4{
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-transform:uppercase;
+    margin-top: 20px;
+    font-weight:1500;
+    background-color: #fff;
+    background: linear-gradient(to right, #ff531a 0%, rgb(15, 10, 10) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
+  }
+  .cont-1{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+    .cont-1 ul { 
+    font-size: 25px;
+    color: white;
+    width: auto;
+    display: block;
+    width:50%;
+    outline: 3px solid white;
+  }
+  .cont-1 ul li{
+    display:block;
+    text-align: center;
+  }
+ 
+.container{
+font-size: 20px;
+padding: 5px;
+margin-bottom: 15px;
+font-weight: 600;
+display: flex;
+flex-direction: column;
+border-style:solid;
+border-width: 1px;
+background-color: rgba(255, 255, 255, 0.418);
+}
+.container:hover{
+  background-color: #fff;
+}
+
+.container label{
+  padding: 10px;
+  float: left;
+}
+#fname{
+  margin:15px;
+}
+  .button-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-1 a{
+      text-decoration: none;
+      color: rgb(10, 125, 226);
+      letter-spacing: 2px;
+      border-radius: 10px;
+      padding:14px 40px;
+      background: rgb(255, 255, 255);
+      border: 2px solid #4c53af; 
+      transition-duration: 0.4s;
+  }
+  *{
+    font-family: "Raleway", sans-serif;
+  
+  }

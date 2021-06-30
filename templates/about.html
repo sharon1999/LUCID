@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUCID</title>
+    <link rel="stylesheet" href="../static/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="nav1">
+          <a  href="{{url_for('index')}}" >LUCID
+          <i class="fas fa-home"></i>
+        </a>
+        <h1>About Us</h1>
+      </div>   
+
+    <div class="about-section">
+      <p>Lucid is a deep emotion classifier for enhanced depression detection using Natural Language Processing and a Classification model. 
+        The model aims at finding the level of Depression in a patient and classifies them as Low, Moderate, and High respectively depending upon the severity.
+      </p>
+    </div>
+    <div class="mid1">
+      <h1>Developers
+      <i class="fas fa-code"></i>
+      </h1>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://i.postimg.cc/LsydTY26/sharon.jpg" />
+          <div class="container">
+            <h2 style="text-align: center">Sharon Antony</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="https://i.postimg.cc/fTtBqHQ9/adwaith.jpg" alt="Adwaith" />
+          <div class="container">
+            <h2 style="text-align: center">Adwaith B A</h2>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="https://i.postimg.cc/cLs5bxDK/reshma.jpg" alt="Reshma"  />
+          <div class="container">
+            <h2 style="text-align: center">Reshma R</h2>
+          </div>                                                
+      </div>
+    </div>
+  </div>
+    <div class="footer">
+      For more details on Developers check &nbsp;<a href="{{url_for('contact')}}">Contact</a>
+    </div>
+  </body>
+</html>

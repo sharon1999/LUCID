@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+body {
+	font-family: 'Baloo 2', cursive;
+	/* height:100vh; */
+	background-image: url("https://free4kwallpapers.com/uploads/originals/2019/08/28/gradient-blur-wallpaper.jpg");
+	background-size: cover;
+	overflow: hidden;
+}
+.banner-text {
+	width: 1550px;
+	position: absolute;
+	z-index: 1;
+}
+.responsive{
+
+}
+
+.banner-text ul {
+	height: 50px;
+	display:flex;
+	justify-content:flex-end;
+}
+.banner-text h6{
+	position: relative;
+	left: 30px;
+}
+.banner-text h1{
+	display:flex;
+	justify-content:center;
+	left:150px ;  
+	color: #fff;
+	font-size: 110px;
+	margin-top: 150px;
+}
+.tm i{
+	position: absolute;
+	left: 59%;
+	top: 25%;
+	margin-top: 95px;
+	color: white;
+	font-size: 25px;
+}
+h6{
+	color: rgb(255, 255, 255);
+	font-size:20px;
+	text-align: center;
+
+}
+sub{
+  font-size: 20px;
+ position: relative;
+  right:110px;
+  top:140px;
+}
+
+
+.banner-text ul li{
+	display: inline-block;
+	padding: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+}
+.banner-text ul li a{
+	color: white;
+	text-decoration: none;
+}
+.banner-text ul li a:hover {
+	cursor: pointer;
+}
+.banner-text p {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.596);
+	font-size: 100px;
+	padding-top:100px ;
+}
+h2 sup{
+	size: 10px;
+}
+.button-1 {
+	position: absolute;
+	top: 350px;
+	left: 665px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-self:center;
+	
+  }
+  
+  .button-1 a{
+	  text-decoration: none;
+	  color: rgb(0, 0, 0);
+	  letter-spacing: 2px;
+	  border-radius: 10px;
+	  background: rgba(255, 255, 255, 0.603);
+	  padding: 14px 40px;
+	  border: 2px solid #000000; 
+	  transition-duration: 0.4s;
+  }
+  .button-1 a:hover {
+	  background-color: #ffffff; /* Green */
+	  color: rgb(0, 0, 0);
+	}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+.footer{
+	color: white;
+	position: relative;
+	top: 650px;
+	left: 20px;
+	font-size: 25px;
+	cursor: pointer;
+}

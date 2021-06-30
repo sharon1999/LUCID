@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:"Segoe UI";
+
+}
+body {
+  background-image: url("https://wallpaperaccess.com/full/260170.png");
+  background-size: cover;}
+.navbar {
+  display: flex;
+  font-family:"Segoe UI";
+
+}
+.one {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+.two {
+  flex: 0.1;
+}
+.navbar a {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.heading-1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px;
+}
+
+.content a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight:lighter;
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .card {
+  position: relative;
+  max-width:500px;
+  height: 200px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover {
+  height: 270px;
+  background-color: rgba(155, 147, 147, 0.616);
+}
+.container .card .imgBx {
+  position: relative;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img {
+  width: 200px;
+  height: 200px;
+}
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top:0px;
+  transition-delay: 0.3s;
+}
+.button-1 {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-self:center;
+	padding-top :100px;
+  }
+  .button-1 a{
+	  text-decoration: none;
+	  color: rgb(0, 0, 0);
+	  letter-spacing: 2px;
+	  border-radius: 10px;
+	  background: rgba(255, 255, 255, 0.603);
+	  padding: 14px 40px;
+	  border: 2px solid #000000; 
+	  transition-duration: 0.4s;
+  }
+  .button-1 a:hover {
+	  background-color: #ff0000; /* Green */
+	  color: rgb(0, 0, 0);
+	}
+  *{
+    font-family: "Raleway", sans-serif;
+  
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LUCID</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+
+  <body>
+    <body class="container1">
+      <div class="text-center text-white lucid">
+        <nav class="navbar">
+          <a class="one" href="{{url_for('index')}}">LUCID</a>
+          <a class="two" href="{{url_for('about')}}">ABOUT</a>
+          <a class="two" href="{{url_for('contact')}}">CONTACT</a>
+        </nav>
+      </div>
+    <!-- <div class="content">
+      <form method="POST" action="{{url_for('home')}}">
+        <div class="sub-content">
+          <i class="fas fa-user"></i>
+          <h4>Enter Your Details Here</h4>
+          Name <br />
+          <input type="text" required size="25" name="name" /> <br />
+          <br />
+          Age <br />
+          <input type="text" size="2" maxlength="4" required name="age" />
+          <br />
+          <br />
+          <input class="center" type="submit" />
+        </div>
+      </form>
+    </div> -->
+    <div class="login-form">
+      <form method="POST" action="{{url_for('home')}}">
+      <div class="avatar">
+        <img src="https://i.pinimg.com/736x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="Avatar">
+      </div>
+          <h2 class="text-center"><b>
+          Enter your details</b></h2>   
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Name" required="required">
+          </div>
+      <div class="form-group">
+              <input type="number" min="10" max = "110" class="form-control" name="age" placeholder="Age" required="required">
+          </div>        
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+          </div>
+      
+      </form>
+  </div>
+  </body>
+</html>
